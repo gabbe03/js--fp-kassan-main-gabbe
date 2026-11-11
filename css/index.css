@@ -1,0 +1,27 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, sans-serif;
+  font-size: 1.8rem;
+  line-height: 1.5;
+  color: #2b2f2f;
+}
+
+main {
+  max-width: 64rem;
+  margin: 6rem auto;
+  padding: 0 2rem;
+}
+
+h1 {
+  font-size: 3.2rem;
+  margin-bottom: 1.6rem;
+}
