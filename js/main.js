@@ -37,4 +37,16 @@ console.log(cart.total()); // 3 × 49 + 35 = 182
 cart.lines().push({ productId: "kaffe", quantity: 99 });
 console.log(cart.lines()); // kaffet ska inte synas här. Varför inte?
 
-cart.add("glass"); // ska kasta ett fel
+// cart.add("glass"); // ska kasta ett fel
+
+// --- Del C ---
+
+const text = formatReceipt(
+  cart.lines(),
+  products,
+  "STUDENT",
+  discountCodes,
+  VAT_RATE,
+);
+
+document.querySelector("#receipt").textContent = text;
